@@ -13,11 +13,11 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen font-poppins">
         <Header toggleSidebar ={toggleSidebar} />
-        <div className="flex flex-1">
+        <div className="flex flex-col-1">
           <Sidebar isOpen={sidebarOpen} toggleSidebar ={toggleSidebar}/>
-          <main className="flex-1 p-4 md:ml-64">
+          <main className="flex-1 p-10 md:ml-64">
             <Routes>
               <Route path="/" element={<Intro />} />
               <Route path="/informasi" element={<Informasi />} />
