@@ -4,13 +4,13 @@ interface HeaderProps {
 
 export default function Header({ toggleSidebar }: HeaderProps) {
   return (
-    <div className="flex items-center mt-3 ml-3 justify-between">
+    <div className="flex items-center justify-between">
       <button
         onClick={toggleSidebar}
-        className="md:hidden p-2 rounded-md hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
+        className="md:hidden p-5 rounded-md"
       >
         <svg
-          className="w-7 h-7"
+          className="w-6 h-6"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

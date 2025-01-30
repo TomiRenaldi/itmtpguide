@@ -1,6 +1,6 @@
 export default function Informasi() {
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto left-20">
       <h2 className="text-3xl md:text-4xl font-semibold mb-4">
         Getting Started
       </h2>
