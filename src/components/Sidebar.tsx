@@ -9,12 +9,12 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
   return (
     <aside
       className={`
-          fixed top-0 left-0 z-30 h-screen w-92 sm:w-70 border-x-1 border-gray-300 border-solid bg-gray-50 p-5 transition-transform duration-300 ease-in-out
+          fixed top-0 left-0 z-30 h-screen w-90 sm:w-70 border-x-1 border-gray-300 border-solid bg-gray-50 p-5 transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           md:relative md:translate-x-0
         `}
     >
-      <div className="flex justify-between items-center mb-4 md:hidden">
+      <div className="flex justify-between items-center mb-2 md:hidden">
         <h2 className="text-2xl font-semibold">Praktik Terbaik</h2>
         <button
           onClick={toggleSidebar}
@@ -48,7 +48,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
               className="block hover:bg-white p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200"
               onClick={toggleSidebar}
             >
-              Intro
+              Intro <a className="text-red-500 text-sm">(Penting)</a>
             </Link>
           </li>
           <li>

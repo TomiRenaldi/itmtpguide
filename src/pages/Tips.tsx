@@ -1,7 +1,7 @@
 export default function Tips() {
   return (
     <div className="max-w-3xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-semibold mb-4">API Reference</h2>
+      <h2 className="text-3xl md:text-4xl font-semibold mb-4">Tips</h2>
       <p className="text-lg mb-4">Here's a quick reference for our main API functions:</p>
       <ul className="space-y-4">
         <li className="bg-white p-4 rounded-lg shadow">
