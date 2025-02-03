@@ -38,7 +38,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
       </div>
       <div className="flex flex-col gap-0.5 leading-none">
         <span className="font-semibold text-sm">IT MTP <a className="text-blue-800">Guide</a></span>
-        <span className="text-xs">v0.0.0a300125-alpha</span>
+        <span className="text-xs">v0.1.0a300125-alpha</span>
       </div>
       <nav className="mt-5">
         <ul className="space-y-2">
@@ -48,7 +48,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
               className="block hover:bg-white p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200"
               onClick={toggleSidebar}
             >
-              Intro <a className="text-red-500 text-sm">(Penting)</a>
+              Intro
             </Link>
           </li>
           <li>
