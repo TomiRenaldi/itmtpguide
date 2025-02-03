@@ -5,6 +5,9 @@ import Sidebar from "./components/Sidebar";
 import Intro from "./pages/Intro";
 import Informasi from "./pages/Informasi";
 import Tips from "./pages/Tips";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,7 +22,9 @@ function App() {
           <Sidebar isOpen={sidebarOpen} toggleSidebar ={toggleSidebar}/>
           <main className="flex-1 p-10 md:ml-8 antialiased">
             <Routes>
-              <Route path="/" element={<Intro />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/" element={<PrivateRoute><Intro /></PrivateRoute>} />
               <Route path="/informasi" element={<Informasi />} />
               <Route path="/tips" element={<Tips />} />
             </Routes>
