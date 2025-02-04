@@ -1,4 +1,7 @@
-import { Link } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { auth } from "../services/auth";
+import { signOut } from "firebase/auth";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -6,6 +9,20 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
+  const navigate = useNavigate()
+  const location = useLocation()
+  const [user] = useAuthState(auth)
+
+  // Jangan tampilkan sidebar saat login atau register
+  if(location.pathname === "/login" || location.pathname === "/register") {
+    return null
+  }
+
+  const handleLogout = async () => {
+    await signOut(auth)
+    navigate('/login')
+  }
+
   return (
     <aside
       className={`
@@ -69,6 +86,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
               Tips
             </Link>
           </li>
+          {user && <button className="block hover:bg-white p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200" onClick={handleLogout}>Logout</button>}
         </ul>
       </nav>
     </aside>
