@@ -3,6 +3,12 @@ interface HeaderProps {
 }
 
 export default function Header({ toggleSidebar }: HeaderProps) {
+  
+   // Jangan tampilkan sidebar saat login atau register
+   if(location.pathname === "/login" || location.pathname === "/register") {
+    return null
+  }
+
   return (
     <div className="flex items-center justify-between">
       <button
