@@ -54,7 +54,7 @@ export default function LoginView() {
           <button
             type="submit"
             role="button"
-            className="w-full flex mt-8 items-center justify-center gap-2 bg-radial-[at_25%_25%] from-white to-zinc-950 to-75% animate-pulse text-white py-2 rounded-lg font-medium hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors pointer-events-auto"
+            className="w-full flex mt-8 items-center justify-center gap-2 bg-radial-[at_25%_25%] from-white to-zinc-950 to-75% animate-pulse text-white py-2 rounded-lg font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-colors pointer-events-auto"
           >
             Login
             <ArrowRight className="h-5 w-5" />

@@ -19,8 +19,8 @@ const Login = () => {
         </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-sm p-5">
-          <div className="flex gap-1 bg-gray-100 p-1 rounded-lg mb-8">
+        <div className="bg-white border-2 border-solid rounded-2xl p-6">
+          <div className="flex gap-1 bg-gray-100 border-1 border-solid p-1 rounded-lg mb-8">
             <button
               onClick={() => setIsLogin(true)}
               className={`flex-1 flex items-center justify-center gap-1 py-1.5 rounded-md font-medium transition-all ${
