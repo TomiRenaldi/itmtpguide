@@ -1,8 +1,11 @@
+import { useLocation } from "react-router-dom";
+
 interface HeaderProps {
   toggleSidebar: () => void;
 }
 
 export default function Header({ toggleSidebar }: HeaderProps) {
+  const location = useLocation()
   
    // Jangan tampilkan sidebar saat login atau register
    if(location.pathname === "/login" || location.pathname === "/register") {

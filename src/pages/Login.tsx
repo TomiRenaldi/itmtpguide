@@ -2,6 +2,7 @@ import { LogIn, Shield, UserPlus } from "lucide-react";
 import { useState } from "react";
 import LoginView from "../components/LoginView";
 import RegisterView from "../components/RegisterView";
+import PrivateRoute from "../components/PrivateRoute";
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -45,7 +46,7 @@ const Login = () => {
             </button>
           </div>
 
-          {isLogin ? <LoginView /> : <RegisterView />}
+          {isLogin ? <LoginView /> : <PrivateRoute><RegisterView /></PrivateRoute>}
         </div>
 
         {/* Footer */}

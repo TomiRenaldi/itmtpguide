@@ -61,7 +61,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
         <ul className="space-y-2">
           <li>
             <Link
-              to="/intro"
+              to="/"
               className="block hover:bg-white p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200"
               onClick={toggleSidebar}
             >
