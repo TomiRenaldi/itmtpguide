@@ -26,7 +26,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
   return (
     <aside
       className={`
-          fixed top-0 left-0 z-30 h-screen w-90 sm:w-70 border-x-1 border-gray-300 border-solid bg-gray-50 p-5 transition-transform duration-300 ease-in-out
+          fixed top-0 left-0 z-30 h-screen w-90 sm:w-70 bg-amber-100 p-5 transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           md:relative md:translate-x-0
         `}
@@ -54,7 +54,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
         </button>
       </div>
       <div className="flex flex-col gap-0.5 leading-none">
-        <span className="font-semibold text-sm">IT MTP <a className="text-blue-800">Guide</a></span>
+        <span className="font-semibold text-sm">IT MTP <a className="text-blue-600">Guide</a></span>
         <span className="text-xs">v0.1.0a300125-alpha</span>
       </div>
       <nav className="mt-5">
@@ -62,7 +62,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
           <li>
             <Link
               to="/"
-              className="block hover:bg-white p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200"
+              className="block hover:bg-gray-100 p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200"
               onClick={toggleSidebar}
             >
               Intro
@@ -71,7 +71,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
           <li>
             <Link
               to="/informasi"
-              className="block hover:bg-white p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200"
+              className="block hover:bg-gray-100 p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200"
               onClick={toggleSidebar}
             >
               Informasi
@@ -80,13 +80,13 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
           <li>
             <Link
               to="/tips"
-              className="block hover:bg-white p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200"
+              className="block hover:bg-gray-100 p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200"
               onClick={toggleSidebar}
             >
               Tips
             </Link>
           </li>
-          {user && <button className="block hover:bg-white p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200" onClick={handleLogout}>Logout</button>}
+          {user && <button className="block hover:bg-gray-100 p-1 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-800 active:bg-gray-200" onClick={handleLogout}>Logout</button>}
         </ul>
       </nav>
     </aside>

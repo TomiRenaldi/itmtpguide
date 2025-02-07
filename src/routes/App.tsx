@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen font-poppins antialiased">
+      <div className="flex flex-col min-h-screen font-poppins antialiased md:subpixel-antialiased">
         <Header toggleSidebar ={toggleSidebar} />
         <div className="flex flex-col-1 antialiased">
           <Sidebar isOpen={sidebarOpen} toggleSidebar ={toggleSidebar}/>
