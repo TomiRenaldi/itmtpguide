@@ -29,7 +29,7 @@ const DownloadButton = ({ fileUrl, fileName }: { fileUrl: string; fileName: stri
         onClick={() => setShowModal(true)}
         className="bg-blue-600 hover:bg-blue-900 text-white px-2 py-1 mt-3 rounded-lg shadow-md transition-all"
       >
-        Pelajari Selengkapnya dan Unduh
+        Unduh & Pelajari Selengkapnya
       </button>
 
       {/* Modal Konfirmasi dengan Blur Background */}

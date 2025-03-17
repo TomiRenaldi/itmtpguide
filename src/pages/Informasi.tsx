@@ -23,6 +23,8 @@ export default function Informasi() {
         </p>
         <li className="mt-5">OpenVox Login<span></span></li>
         <p>IP: <span className="font-bold">192.168.88.3</span></p>
+        <p>Username: <span className="font-bold">admin</span></p>
+        <p>Password: <span className="font-bold">admin</span></p>
         <DownloadButton fileName="catatan.docx" fileUrl="/documents/catatan.docx"></DownloadButton>
 
         <li className="mt-5">Router indihome <span>ISP (1) 192.168.88.1</span></li>
