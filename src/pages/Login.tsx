@@ -1,4 +1,4 @@
-import { LogIn, UserPlus } from "lucide-react";
+import { LogIn, Shield, UserPlus } from "lucide-react";
 import { useState } from "react";
 import LoginView from "../components/LoginView";
 import RegisterView from "../components/RegisterView";
@@ -12,7 +12,7 @@ const Login = () => {
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center">
-            <img src="./src/assets/Logos.png" className="w-28 h-20" alt="" />
+            <Shield className="w-18 h-18"></Shield>
           </div>
           <h1 className="text-2xl font-bold text-black">IT MTP GUIDE</h1>
           <p className="text-center text-xs text-black">
