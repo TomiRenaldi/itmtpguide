@@ -12,11 +12,11 @@ const Login = () => {
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center">
-            <Shield className="w-16 h-16" strokeWidth={1.5} />
+            <img src="./src/assets/Logos.png" className="w-28 h-20" alt="" />
           </div>
           <h1 className="text-2xl font-bold text-black">IT MTP GUIDE</h1>
           <p className="text-center text-xs text-black">
-          Based on IT Experience
+          by Tomi Renaldi IT-PT.MTP
         </p>
         </div>
 

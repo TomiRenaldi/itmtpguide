@@ -26,7 +26,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
   return (
     <aside
       className={`
-          fixed top-0 left-0 z-30 h-screen w-90 sm:w-70 p-5 transition-transform duration-300 ease-in-out
+          fixed top-0 left-0 z-1000 h-screen w-90 sm:w-70 p-5 bg-gray-100 transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           md:relative md:translate-x-0
         `}
