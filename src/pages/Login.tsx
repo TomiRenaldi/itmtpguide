@@ -1,4 +1,4 @@
-import { LogIn, Shield, UserPlus } from "lucide-react";
+import { LogIn, UserPlus } from "lucide-react";
 import { useState } from "react";
 import LoginView from "../components/LoginView";
 import RegisterView from "../components/RegisterView";
